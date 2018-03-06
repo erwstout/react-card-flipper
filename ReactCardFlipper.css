@@ -26,12 +26,12 @@
   transform: rotateY(180deg);
 }
 
-.flipper {
+.rcf-flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
   position: relative;
 }
 
-.rcf-active .flipper {
+.rcf-active .rcf-flipper {
   transform: rotateY(180deg);
 }
