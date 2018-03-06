@@ -26,13 +26,12 @@
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "2.11.1"
   },
-  "dependencies": {
-    "styled-components": "^3.2.0"
-  },
+  "dependencies": {},
   "scripts": {
     "lint": "./node_modules/.bin/eslint ReactCardFlipper.js",
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "test": "jest"
   }
 }

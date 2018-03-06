@@ -1,3 +1,11 @@
+#main.container {
+  padding: 80px 0;
+}
+
+.rcf-container {
+  margin: 0 auto;
+}
+
 .rcf-front, .rcf-back{
   border: 1px solid black;
   border-radius: 5px;

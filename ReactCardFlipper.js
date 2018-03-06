@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
-import Flipper from './lib/Flipper';
 import './ReactCardFlipper.css';
 
 /**
   * ReactCardFlipper
   * Author: Eric Stout, https://factor1studios.com
   *
-  * Required Props:
-  * Width: string
-  * Height: string
-  *
   * Optional Props:
-  * behavior: click, hover
+  * Width: string (default: auto)
+  * Height: string (default: auto)
+  * behavior: click, hover (default: click)
 **/
 
 class ReactCardFlipper extends Component {
@@ -46,15 +42,21 @@ class ReactCardFlipper extends Component {
     }
 
     return(
-      <div className="rcf-container rcf-card" style={containerStyles} onClick={ (e) => this.handleClick(e) }>
-        <Flipper {...this.state}>
+      <div
+        className="rcf-container rcf-card"
+        style={containerStyles}
+        onClick={ (e) => { if(this.state.behavior === 'click'){ this.handleClick(e) }}}
+        onMouseEnter={ (e) => { if(this.state.behavior === 'hover'){ this.handleClick(e) }}}
+        onMouseLeave={ (e) => { if(this.state.behavior === 'hover'){ this.handleClick(e) }}}
+        >
+        <div className="flipper">
           <div className="rcf-front" style={containerStyles}>
             {this.props.children[0]}
           </div>
           <div className="rcf-back" style={containerStyles}>
             {this.props.children[1]}
           </div>
-        </Flipper>
+        </div>
       </div>
     )
   }

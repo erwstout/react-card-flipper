@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import ReactCardFlipper from './ReactCardFlipper';
 
 ReactDOM.render(
-  <div className="container">
+  <div id="main" className="container">
     <div className="row">
-      <div className="col-10 col-centered">
-        <ReactCardFlipper width="300px" height="400px">
+      <div className="col-10 text-center col-centered">
+        <ReactCardFlipper width="300px" height="400px" behavior="click">
           <div className="text-center">
             You can click me, go ahead... Try it.
           </div>
