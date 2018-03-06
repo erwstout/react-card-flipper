@@ -77,3 +77,22 @@ only be adding styles to `.rcf-front` & `.rcf-back`. All classes available for s
 - `rcf-front` - front card styling
 - `rcf-back` - back card styling
 - `rcf-flipper` - "flipper" container, controls animation speed, etc.
+
+## Development
+To get started developing on this project, fork or clone the repo. Then run `yarn install`
+
+#### Start the development server
+##### `yarn start`
+Starts the development/test server and polls for changes.
+
+#### Running EsLint
+##### `yarn lint`
+Lints `ReactCardFlipper.js` and outputs any warnings or errors.
+
+#### Running Tests
+##### `yarn test`
+Runs EsLint, and builds the test output.
+
+#### Running Test Build
+##### `yarn build`
+Compiles a new test build.
