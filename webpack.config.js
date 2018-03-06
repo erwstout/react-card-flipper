@@ -1,10 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: './ReactCardFlipper.js',
+  entry: './Test.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'test_bundle.js',
     path: path.resolve(__dirname, 'tests')
+  },
+  devServer: {
+    contentBase: './tests'
   },
   module: {
     rules: [
