@@ -1,0 +1,37 @@
+/**
+  * ReactCardFlipper
+  * Author: Eric Stout, https://factor1studios.com
+**/
+
+.rcf-container {
+  perspective: 1000px;
+  width: auto;
+  height: auto;
+}
+
+.rcf-front, .rcf-back {
+  width: auto;
+  height: auto;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rcf-front {
+  z-index: 2;
+}
+
+.rcf-back {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.rcf-active .flipper {
+  transform: rotateY(180deg);
+}
