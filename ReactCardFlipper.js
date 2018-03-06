@@ -28,7 +28,6 @@ class ReactCardFlipper extends Component {
   }
 
   handleClick(e) {
-    console.log(e.currentTarget)
     e.currentTarget.classList.toggle('rcf-active');
     this.setState({
       isFlipped: this.state.isFlipped ? false : true
@@ -42,13 +41,8 @@ class ReactCardFlipper extends Component {
     }
 
     return(
-      <div
-        className="rcf-container rcf-card"
-        style={containerStyles}
-        onClick={ (e) => { if(this.state.behavior === 'click'){ this.handleClick(e) }}}
-        onMouseEnter={ (e) => { if(this.state.behavior === 'hover'){ this.handleClick(e) }}}
-        onMouseLeave={ (e) => { if(this.state.behavior === 'hover'){ this.handleClick(e) }}}
-        >
+      <div className="rcf-container rcf-card" style={containerStyles} onClick={ (e) => { if(this.state.behavior === 'click'){ this.handleClick(e) }}} onMouseEnter={ (e) => { if(this.state.behavior === 'hover'){ this.handleClick(e) }}}
+        onMouseLeave={ (e) => { if(this.state.behavior === 'hover'){ this.handleClick(e) }}}>
         <div className="flipper">
           <div className="rcf-front" style={containerStyles}>
             {this.props.children[0]}
