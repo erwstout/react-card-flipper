@@ -37,3 +37,30 @@
 .rcf-active .rcf-flipper {
   transform: rotateY(180deg);
 }
+
+/* IE Support for 11-10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .rcf-active .rcf-back {
+    transform: rotateY(0deg);
+  }
+
+  .rcf-active .rcf-flipper {
+    transform: rotateY(0deg);
+  }
+
+  .rcf-active .rcf-front {
+    transform: rotateY(180deg);
+  }
+
+  .rcf-active .rcf-back {
+    transform: rotateY(0deg);
+  }
+
+  .rcf-front {
+    transform: rotateY(0deg);
+  }
+
+  .rcf-back {
+    transform: rotateY(-180deg);
+  }
+}
