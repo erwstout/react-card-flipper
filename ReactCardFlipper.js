@@ -10,7 +10,7 @@ import './ReactCardFlipper.css';
   * Width: string (default: auto)
   * Height: string (default: auto)
   * behavior: click, hover (default: click)
-  * levitate: boolean (default: false, only works when clicked)
+  * levitate: boolean (default: false, only works when behavior is set to `click`)
 **/
 
 class ReactCardFlipper extends Component {
