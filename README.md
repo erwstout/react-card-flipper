@@ -15,6 +15,19 @@ from [David Walsh's great tutorial](https://davidwalsh.name/css-flip).
 ### npm:
 `npm install react-card-flipper --save`
 
+## Current Browser Support
+Initial testing via BrowserStack:
+
+| Browser | Support | Notes |
+| ------------- |:--:| ------ |
+| Chrome >= 38  | ✅ | |
+| Edge >= 14    | ✅ | |
+| IE 11         | ⚠️ | |
+| IE 10         | ❌ | Card flip appears backwards |
+| Safari >= 10.1| ✅ | |
+| Safari 9.1    | ⚠️ | React doesn't render, possibly needs a babel polyfill for testing |
+
+
 ## Getting Started
 You can import react-card-flipper into your React app. The following is a bare
 bones example.
