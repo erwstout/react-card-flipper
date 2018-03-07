@@ -22,8 +22,8 @@ Initial testing via BrowserStack:
 | ------------- |:--:| ------ |
 | Chrome >= 38  | ✅ | |
 | Edge >= 14    | ✅ | |
-| IE 11         | ⚠️ | |
-| IE 10         | ❌ | Card flip appears backwards |
+| IE 11         | ⚠️ |Card flip appears backwards |
+| IE 10         | ❌ | |
 | Safari >= 10.1| ✅ | |
 | Safari 9.1    | ⚠️ | React doesn't render, possibly needs a babel polyfill for testing |
 
