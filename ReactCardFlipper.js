@@ -1,7 +1,3 @@
-import React, { Component } from 'react';
-
-import './ReactCardFlipper.css';
-
 /**
   * ReactCardFlipper
   * Author: Eric Stout, https://factor1studios.com
@@ -12,6 +8,9 @@ import './ReactCardFlipper.css';
   * behavior: click, hover (default: click)
   * levitate: boolean (default: false, only works when behavior is set to `click`)
 **/
+
+import React, { Component } from 'react';
+import './ReactCardFlipper.css';
 
 class ReactCardFlipper extends Component {
   constructor(props) {
