@@ -1,0 +1,72 @@
+/**
+  * ReactCardFlipper
+  * Author: Eric Stout, https://factor1studios.com
+**/
+
+.rcf-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: auto;
+  height: auto;
+  transition: transform 500ms cubic-bezier(.18,.45,.11,.91);
+}
+
+.rcf-front, .rcf-back {
+  width: auto;
+  height: auto;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rcf-front {
+  z-index: 2;
+}
+
+.rcf-back {
+  transform: rotateY(180deg);
+}
+
+.rcf-flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.rcf-active .rcf-flipper {
+  transform: rotateY(180deg);
+}
+
+.rcf-levitate {
+  transform: translateY(-15px);
+  transition: transform 500ms cubic-bezier(.18,.45,.11,.91);
+}
+
+/* IE Support for 11-10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .rcf-active .rcf-back {
+    transform: rotateY(0deg);
+  }
+
+  .rcf-active .rcf-flipper {
+    transform: rotateY(0deg);
+  }
+
+  .rcf-active .rcf-front {
+    transform: rotateY(180deg);
+  }
+
+  .rcf-active .rcf-back {
+    transform: rotateY(0deg);
+  }
+
+  .rcf-front {
+    transform: rotateY(0deg);
+  }
+
+  .rcf-back {
+    transform: rotateY(-180deg);
+  }
+}

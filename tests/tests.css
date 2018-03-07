@@ -1,0 +1,15 @@
+#main.container {
+  padding: 80px 0;
+}
+
+.rcf-container {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.rcf-front, .rcf-back{
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0,0,0, 0.3);
+  background-color: yellow;
+}
