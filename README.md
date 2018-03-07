@@ -16,16 +16,19 @@ from [David Walsh's great tutorial](https://davidwalsh.name/css-flip).
 `npm install react-card-flipper --save`
 
 ## Current Browser Support
-Initial testing via BrowserStack:
+Initial testing via BrowserStack of a React app that simply renders the card
+component.
 
 | Browser | Support | Notes |
-| ------------- |:--:| ------ |
-| Chrome >= 38  | ✅ | |
-| Edge >= 14    | ✅ | |
-| IE 11         | ⚠️ | |
-| IE 10         | ❌ | Card flip appears backwards |
-| Safari >= 10.1| ✅ | |
-| Safari 9.1    | ⚠️ | React doesn't render, possibly needs a babel polyfill for testing |
+| ---------------- |:--:| ------ |
+| Chrome >= 38     | ✅ | |
+| Edge >= 14       | ✅ | |
+| Firefox >= 16    | ✅‍ |  |
+| IE 11-10         | ⚠️ | Card flip back panel does not appear |
+| IE 9.0           | ❌ | Both sides of card appear at once |
+| Opera >= 30      | ✅ | |
+| Safari >= 6.2.8  | ✅ | |
+| Safari 6.0.5     | ⚠️ | Card flip has no animation |
 
 
 ## Getting Started

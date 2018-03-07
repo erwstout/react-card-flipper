@@ -3,7 +3,8 @@
 }
 
 .rcf-container {
-  margin: 0 auto;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 .rcf-front, .rcf-back{

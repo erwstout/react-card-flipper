@@ -14,6 +14,14 @@ ReactDOM.render(
             Great job! You win person of the year.
           </div>
         </ReactCardFlipper>
+        <ReactCardFlipper width="300px" height="400px" behavior="hover">
+          <div className="text-center">
+            This is a second card because you can have multiple. This one hovers!
+          </div>
+          <div className="text-center">
+            Great job! You win person of the day.
+          </div>
+        </ReactCardFlipper>
       </div>
     </div>
   </div>,
