@@ -8,6 +8,7 @@
   transform-style: preserve-3d;
   width: auto;
   height: auto;
+  transition: transform 500ms cubic-bezier(.18,.45,.11,.91);
 }
 
 .rcf-front, .rcf-back {
@@ -36,6 +37,11 @@
 
 .rcf-active .rcf-flipper {
   transform: rotateY(180deg);
+}
+
+.rcf-levitate {
+  transform: translateY(-15px);
+  transition: transform 500ms cubic-bezier(.18,.45,.11,.91);
 }
 
 /* IE Support for 11-10 */

@@ -24,16 +24,18 @@ component.
 | Chrome >= 38     | ✅ | |
 | Edge >= 14       | ✅ | |
 | Firefox >= 16    | ✅‍ |  |
-| IE 11-10         | ⚠️ | Animations are disabled for compatibility |
+| IE 11-10         | ⚠️ | Card flips have no animation |
 | IE 9.0           | ❌ | No toggling of cards |
 | Opera >= 30      | ✅ | |
 | Safari >= 6.2.8  | ✅ | |
-| Safari 6.0.5     | ⚠️ | Card flip has no animation |
+| Safari 6.0.5     | ⚠️ | Card flips have no animation |
 
 
 ## Getting Started
 You can import react-card-flipper into your React app. The following is a bare
 bones example.
+
+> **Important:** The `<ReactCardFlipper>` component must have two `<div>` elements, one for the front and one for the back.
 
 ```js
 import React from 'react';
@@ -56,26 +58,27 @@ ReactDOM.render(
 ```
 
 ## Props and Options
-The `ReactCardFlipper` component has 3 props it accepts that you can use to adjust
+The `ReactCardFlipper` component has 4 props it accepts that you can use to adjust
 how your card behaves.
 
-| Prop / Option | Accepted Prop(s)            | Default |
-| ------------- |:---------------------------:|--------:|
-| `width`       | String (ex: `300px`)        | `auto`  |
-| `height`      | String (ex: `600px`)        | `auto`  |
-| `behavior`    | String (`click` or `hover`) | `click` |
+| Prop / Option | Accepted Prop(s)            | Default | Description |
+| ------------- |:---------------------------:|:-------:| ----------- |
+| `width`       | String (ex: `300px`)        | `auto`  | Card width.  |
+| `height`      | String (ex: `600px`)        | `auto`  | Card height. |
+| `behavior`    | String (`click` or `hover`) | `click` | If the card should click to flip, or hover to flip. |
+| `levitate`    | Boolean                     | `false` | If the card should "levitate" up on hover. Only applied when `behavior` is `click`. |
 
 #### Example:
 ```js
 render() {
   return(
     <div>
-      <ReactCardFlipper width="300px" height="550px" behavior="hover">
+      <ReactCardFlipper width="300px" height="550px" behavior="click" levitate={true}>
         <div>
-          <h3>Hover me to learn more</h3>
+          <h3>Click me to learn more</h3>
         </div>
         <div>
-          <p>You hovered! Keep that knowledge growing...</p>
+          <p>You Clicked!</p>
         </div>
       </ReactCardFlipper>
     </div>
