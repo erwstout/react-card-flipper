@@ -22,6 +22,14 @@ ReactDOM.render(
             Great job! You win person of the day.
           </div>
         </ReactCardFlipper>
+        <ReactCardFlipper width="300px" height="400px" behavior="click" levitate={true}>
+          <div className="text-center">
+            You can click me, and I levitate
+          </div>
+          <div className="text-center">
+            Great job! You win person of the minute.
+          </div>
+        </ReactCardFlipper>
       </div>
     </div>
   </div>,
