@@ -24,8 +24,8 @@ component.
 | Chrome >= 38     | ✅ | |
 | Edge >= 14       | ✅ | |
 | Firefox >= 16    | ✅‍ |  |
-| IE 11-10         | ⚠️ | Card flip back panel does not appear |
-| IE 9.0           | ❌ | Both sides of card appear at once |
+| IE 11-10         | ⚠️ | Animations are disabled for compatibility |
+| IE 9.0           | ❌ | No toggling of cards |
 | Opera >= 30      | ✅ | |
 | Safari >= 6.2.8  | ✅ | |
 | Safari 6.0.5     | ⚠️ | Card flip has no animation |
