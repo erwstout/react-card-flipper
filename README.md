@@ -112,6 +112,6 @@ Lints `ReactCardFlipper.js` and outputs any warnings or errors.
 ##### `yarn test`
 Runs EsLint, and builds the test output.
 
-#### Running Test Build
+#### Running Production Build
 ##### `yarn build`
-Compiles a new test build.
+Compiles a new build in the `dist/` folder.
