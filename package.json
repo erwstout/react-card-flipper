@@ -2,7 +2,7 @@
   "name": "react-card-flipper",
   "version": "0.1.0",
   "description": "A React card flipper component.",
-  "main": "ReactCardFlipper.js",
+  "main": "dist/ReactCardFlipper.js",
   "repository": "git@github.com:factor1/react-card-flipper.git",
   "author": "Eric Stout <ericwstout@gmail.com>",
   "license": "MIT",
@@ -30,9 +30,9 @@
   "dependencies": {},
   "scripts": {
     "lint": "./node_modules/.bin/eslint ReactCardFlipper.js",
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "build": "webpack --env.production --progress",
+    "watch": "webpack --env.production=false --watch",
+    "start": "webpack-dev-server --env.production=false --open",
     "test": "npm run lint && npm run build"
   }
 }
