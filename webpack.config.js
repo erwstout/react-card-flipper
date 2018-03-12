@@ -6,7 +6,9 @@ module.exports = env => {
     entry: env.production ? ['babel-polyfill', './ReactCardFlipper.js'] : ['babel-polyfill', './Test.js'],
     output: {
       filename: env.production ? 'ReactCardFlipper.js' : 'test_bundle.js',
-      path: env.production ? path.resolve(__dirname, 'dist') : path.resolve(__dirname, 'tests')
+      path: env.production ? path.resolve(__dirname, 'dist') : path.resolve(__dirname, 'tests'),
+      library: 'ReactCardFlipper',
+      libraryTarget: 'umd'
     },
     devServer: {
       contentBase: './tests'
