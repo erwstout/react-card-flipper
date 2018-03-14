@@ -266,7 +266,7 @@ process.umask = function() { return 0; };
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 function makeEmptyFunction(arg) {
@@ -801,7 +801,7 @@ module.exports = getActiveElement;
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- * 
+ *
  */
 
 /*eslint-disable no-self-compare */
@@ -873,7 +873,7 @@ module.exports = shallowEqual;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 var isTextNode = __webpack_require__(20);
@@ -8314,7 +8314,7 @@ var AsyncUpdates = 1;
   try {
     var nonExtensibleObject = Object.preventExtensions({});
     /* eslint-disable no-new */
-    
+
     /* eslint-enable no-new */
   } catch (e) {
     // TODO: Consider warning about bad polyfills
@@ -14444,7 +14444,7 @@ function setValueForProperty(node, name, value) {
   }
 
   {
-    
+
   }
 }
 
@@ -14459,7 +14459,7 @@ function setValueForAttribute(node, name, value) {
   }
 
   {
-    
+
   }
 }
 
