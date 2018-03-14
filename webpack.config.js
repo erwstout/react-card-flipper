@@ -27,7 +27,8 @@ module.exports = env => {
       ]
     },
     plugins: [
-      env.production ? new webpack.optimize.UglifyJsPlugin() : ''
+      env.production ? new webpack.DefinePlugin({"process.env": {NODE_ENV: JSON.stringify("production")}}) : '',
+      env.production ? new webpack.optimize.UglifyJsPlugin() : '',
     ]
   }
 };

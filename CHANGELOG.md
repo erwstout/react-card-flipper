@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2018-03-12
+### Fix
+- Adjust webpack config to ensure when compiled for production, only React production
+code is included
+
+### Added
+- className support thanks to @tamirkash
+
 ## [0.2.0] - 2018-03-12
 ### Fix
 - Webpack config that was causing error(s) when trying to import as a npm package.
