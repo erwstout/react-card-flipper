@@ -21,7 +21,8 @@ class ReactCardFlipper extends Component {
       width: this.props.width,
       height: this.props.height,
       behavior: this.props.behavior ? this.props.behavior : 'click',
-      levitate: this.props.levitate ? this.props.levitate : false
+      levitate: this.props.levitate ? this.props.levitate : false,
+      containerClass: this.props.className ? `${this.props.className} rcf-container` : 'rcf-container'
     }
 
     // bind this 🤙
@@ -55,9 +56,9 @@ class ReactCardFlipper extends Component {
       width: this.state.width,
       height: this.state.height,
     }
-
+    
     return(
-      <div className="rcf-container" style={containerStyles} onClick={ (e) => { if(this.state.behavior === 'click'){ this.handleFlip(e) }}} onMouseEnter={ (e) => { this.handleMouseEvent(e) }}
+      <div className={this.state.containerClass} style={containerStyles} onClick={ (e) => { if(this.state.behavior === 'click'){ this.handleFlip(e) }}} onMouseEnter={ (e) => { this.handleMouseEvent(e) }}
         onMouseLeave={ (e) => { this.handleMouseEvent(e) }}>
         <div className="rcf-flipper">
           <div className="rcf-front" style={containerStyles}>
