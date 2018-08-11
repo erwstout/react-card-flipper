@@ -1,6 +1,6 @@
 {
   "name": "react-card-flipper",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A React card flipper component.",
   "main": "dist/ReactCardFlipper.js",
   "repository": "git@github.com:erwstout/react-card-flipper.git",
