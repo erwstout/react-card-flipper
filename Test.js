@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import ReactCardFlipper from './ReactCardFlipper';
+import React from "react";
+import ReactDOM from "react-dom";
+import ReactCardFlipper from "./ReactCardFlipper";
 
 ReactDOM.render(
   <div id="main" className="container">
@@ -11,21 +11,25 @@ ReactDOM.render(
             You can click me, go ahead... Try it.
           </div>
           <div className="text-center">
-            Great job! You win person of the year.
+            Great job! You win person of the month.
           </div>
         </ReactCardFlipper>
         <ReactCardFlipper width="300px" height="400px" behavior="hover">
           <div className="text-center">
-            This is a second card because you can have multiple. This one hovers!
+            This is a second card because you can have multiple. This one
+            hovers!
           </div>
           <div className="text-center">
             Great job! You win person of the day.
           </div>
         </ReactCardFlipper>
-        <ReactCardFlipper width="300px" height="400px" behavior="click" levitate={true}>
-          <div className="text-center">
-            You can click me, and I levitate
-          </div>
+        <ReactCardFlipper
+          width="300px"
+          height="400px"
+          behavior="click"
+          levitate={true}
+        >
+          <div className="text-center">You can click me, and I levitate</div>
           <div className="text-center">
             Great job! You win person of the minute.
           </div>
@@ -33,5 +37,5 @@ ReactDOM.render(
       </div>
     </div>
   </div>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
