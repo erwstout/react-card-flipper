@@ -43,7 +43,6 @@
     "build": "webpack --env.production --progress",
     "watch": "webpack --env.production --watch",
     "start": "webpack-dev-server --env.production --open",
-    "test":
-      "yarn run lint && yarn run flow && webpack-dev-server --env.develop --open && webpack --env.develop --progress --watch"
+    "test": "yarn run lint && yarn run flow && yarn build"
   }
 }
