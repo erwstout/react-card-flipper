@@ -1,9 +1,9 @@
 {
   "name": "react-card-flipper",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A React card flipper component.",
   "main": "dist/ReactCardFlipper.js",
-  "repository": "git@github.com:factor1/react-card-flipper.git",
+  "repository": "git@github.com:erwstout/react-card-flipper.git",
   "author": "Eric Stout <ericwstout@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -11,13 +11,20 @@
     "autoprefixer": "^8.1.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
     "eslint": "^4.18.2",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.78.0",
     "path": "^0.12.7",
     "postcss-loader": "^2.1.1",
     "react": "^16.2.0",
@@ -27,12 +34,15 @@
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "2.11.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-jss": "^8.6.1"
+  },
   "scripts": {
     "lint": "./node_modules/.bin/eslint ReactCardFlipper.js",
     "build": "webpack --env.production --progress",
-    "watch": "webpack --env.production=false --watch",
-    "start": "webpack-dev-server --env.production=false --open",
-    "test": "npm run lint && npm run build"
+    "watch": "webpack --env.production --watch",
+    "start": "webpack-dev-server --env.production --open",
+    "test": "yarn run lint && yarn run flow && yarn build"
   }
 }
