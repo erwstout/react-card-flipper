@@ -153,7 +153,7 @@ const styles = {
 
   rcfActive: {
     "& $rcfFlipper": {
-      transform: "rotateY(180deg) translateX(-20px)"
+      transform: "rotateY(180deg)"
     }
   },
 
