@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import { ReactCardFlipperHandle } from "../types";
+import { CardFlipperHandle } from "../types";
 
 export const useCardFlipper = (id: string) => {
-  const cardRef = useRef<ReactCardFlipperHandle | null>(null);
+  const cardRef = useRef<CardFlipperHandle | null>(null);
 
   const toggleCardFlip = () => {
     const cardElement = document.getElementById(id);

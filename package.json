@@ -9,9 +9,15 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/node": "^22.10.5",
     "@types/react": "^19.0.3",
+    "@types/webpack": "^5.28.5",
+    "css-loader": "^7.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.2",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
@@ -21,8 +27,8 @@
     "react-dom": "^19.0.0"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ReactCardFlipper.js",
-    "build": "webpack --env.production --progress",
+    "lint": "./node_modules/.bin/eslint CardFlipper.js",
+    "build": "webpack --mode production",
     "watch": "webpack --env.production --watch",
     "start": "webpack-dev-server --env.production --open",
     "test": "yarn run lint && yarn run flow && yarn build"

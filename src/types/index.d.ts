@@ -1,4 +1,4 @@
-export interface ReactCardFlipperProps {
+export interface CardFlipperProps {
   id: string;
   back: React.ReactNode;
   behavior?: "click" | "hover";
@@ -12,6 +12,6 @@ export interface ReactCardFlipperProps {
   width?: number | "auto";
 }
 
-export interface ReactCardFlipperHandle {
+export interface CardFlipperHandle {
   toggleFlip: () => void;
 }

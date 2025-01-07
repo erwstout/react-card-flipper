@@ -39,19 +39,19 @@ component.
 You can import react-card-flipper into your React app. The following is a bare
 bones example.
 
-> **Important:** The `<ReactCardFlipper>` component must have two `<div>` elements, one for the front and one for the back.
+> **Important:** The `<CardFlipper>` component must have two `<div>` elements, one for the front and one for the back.
 
 ```js
 import React from "react";
 import ReactDOM from "react-dom";
-import ReactCardFlipper from "react-card-flipper";
+import CardFlipper from "react-card-flipper";
 
 ReactDOM.render(
   <div>
-    <ReactCardFlipper>
+    <CardFlipper>
       <div>The cards front content goes here.</div>
       <div>The cards back content goes here.</div>
-    </ReactCardFlipper>
+    </CardFlipper>
   </div>,
   document.getElementById("root")
 );
@@ -59,7 +59,7 @@ ReactDOM.render(
 
 ## Props and Options
 
-The `ReactCardFlipper` component has 4 props it accepts that you can use to adjust
+The `CardFlipper` component has 4 props it accepts that you can use to adjust
 how your card behaves.
 
 | Prop / Option |      Accepted Prop(s)       | Default | Description                                                                         |
@@ -75,14 +75,14 @@ how your card behaves.
 render() {
   return(
     <div>
-      <ReactCardFlipper width="300px" height="550px" behavior="click" levitate={true}>
+      <CardFlipper width="300px" height="550px" behavior="click" levitate={true}>
         <div>
           <h3>Click me to learn more</h3>
         </div>
         <div>
           <p>You Clicked!</p>
         </div>
-      </ReactCardFlipper>
+      </CardFlipper>
     </div>
   )
 }
@@ -96,7 +96,7 @@ To style the card itself, you want to use `innerCardClass`, for the card contain
 would use a normal `className`. You can see a working example [here](https://codesandbox.io/s/p99p8mxqqj) or reference the following code snippet (this example is using `react-jss`):
 
 ```js
-<ReactCardFlipper
+<CardFlipper
   width="300px"
   height="400px"
   behavior="click"
@@ -105,7 +105,7 @@ would use a normal `className`. You can see a working example [here](https://cod
 >
   <div className="text-center">You can click me, go ahead... Try it.</div>
   <div className="text-center">Great job! You win person of the month.</div>
-</ReactCardFlipper>
+</CardFlipper>
 ```
 
 ## Development
@@ -122,7 +122,7 @@ Starts the development/test server and polls for changes.
 
 ##### `yarn lint`
 
-Lints `ReactCardFlipper.js` and outputs any warnings or errors.
+Lints `CardFlipper.js` and outputs any warnings or errors.
 
 #### Running Tests
 
